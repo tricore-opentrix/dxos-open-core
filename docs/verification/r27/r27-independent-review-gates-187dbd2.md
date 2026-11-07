@@ -70,7 +70,7 @@ SPDX-License-Identifier: Apache-2.0
 | P0 | **Ánh** | Resolve favicon upstream fragment/template origin and NOTICE, identify Portal screen-name changes by actual Git hunk, Data original rights; reconcile 107 path/blob technical review with actual authorship. | Yến (Bảo for Data technical cross-check) |
 | P0 | **Bảo** | Verify Gradle upstream Wrapper scripts and notices; distinguish the single excluded JAR from included generated scripts/properties. | Yến |
 | P0 | **Yến** | Allocate true authors and reviewers for remaining repository files; itemize and disposition 37 historical exception paths, collective `TRICORE contributors` label and any copied third-party material. | Bảo and Ánh as independent scoped reviewers |
-| P0 | **Yến** | Confirm archived `LICENSE`, `NOTICE`, third-party SBOM metadata and any required upstream texts/permissions; source-only vs future binary distribution constraints. | Bảo |
+| P0 | **Yến (S6-13 coordinator); Yến/Bảo as contributors of actual portions** | Confirm the ten archive-only metadata members and preserve archived hashes; distinguish Yến's original LICENSE/NOTICE and CHANGELOG portions, Bảo's later NOTICE/CHANGELOG and R23/R24 tooling, and upstream/generated SBOM and notice obligations. Resolve `44283466` substantive participation before selecting an independent reviewer. | Yến reviews Bảo-only portions; Bảo reviews Yến-only portions if genuinely independent; Ánh only reviews mixed portions she did not contribute; otherwise obtain another non-contributing reviewer. All rights remain PENDING. |
 
 ## Release acceptance boundary
 

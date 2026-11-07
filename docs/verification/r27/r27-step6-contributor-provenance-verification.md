@@ -11,7 +11,7 @@ SPDX-License-Identifier: Apache-2.0
 **Evidence verification:** `PARTIAL` — already reported technical identities and statements are cited; required new confirmations are NOT_VERIFIED  
 **Rights disposition:** `PENDING` for all unresolved included sources and affected portions  
 **Coordinator:** Yến (`@phanyen06ym-ien`); this role does not imply copyright ownership  
-**Review routing:** Ánh reviews Yến's Identity portions; Yến reviews Bảo's Backend/Gateway and Ánh's Data/Frontend/Portal portions; Bảo reviews eligible Yến-coordinated root/metadata portions that he did not contribute; mixed Data tests require portion-level independence  
+**Review routing:** Ánh reviews Yến's Identity portions; Yến reviews Bảo's Backend/Gateway and Ánh's Data/Frontend/Portal portions; S6-13 archive metadata has Yến as evidence coordinator, Yến reviewing Bảo-only portions, Bảo reviewing Yến-only portions only when independent, and Ánh reviewing mixed portions only when not a substantive contributor (otherwise another independent reviewer); mixed Data tests also require portion-level independence  
 **Tracking:** [Issue #138](https://github.com/tricore-opentrix/opentrix/issues/138)  
 **Candidate SHA:** `187dbd2ea6935966f5c4cceb95ad9c3c53708a2e`; historical Identity baseline `5daa145d3b5f20f2f16fe0799c6d0808fd6c3e33`  
 **Existing rights ledger:** [R27-REG-001, #143 at `6cb5a32`](https://github.com/tricore-opentrix/opentrix/blob/6cb5a32897563df018cf79dd66b92a20a3e823f1/docs/verification/r27/r27-rights-remediation-register-187dbd2.csv)  
@@ -71,3 +71,16 @@ Audit boundary: 347 tracked Git paths including one excluded upstream Gradle JAR
 - [ ] A separate source-rights gate is actually satisfied before considering R27 PASS; R24 release signoff remains distinct.
 
 **Current outcome:** `STEP_6_EVIDENCE_REQUEST_DRAFT / ACTUAL_CONTRIBUTOR_PROVENANCE_PENDING / R27_RIGHTS_PENDING / R24_RELEASE_BLOCKED`. Keep [#138](https://github.com/tricore-opentrix/opentrix/issues/138) OPEN and [#139](https://github.com/tricore-opentrix/opentrix/pull/139) Draft. Do not merge, tag or publish on this document's authority.
+
+## S6-13 portion-specific routing update (Step 6B; documentation-only)
+
+This amendment reconciles S6-13 with the ten `ARCHIVE_METADATA` rows in R27-REG-001 without asserting copyright ownership or changing any frozen source/archive byte. **Yến coordinates evidence**; both Yến and Bảo are contributors for their **own** specific text and/or generation-tool portions, never automatic owners of all ten archive artifacts. Eligible independent reviewers are routed at actual portion level, not blanket file group level:
+
+| Sub-scope | Contributor evidence | Eligible independent reviewer | Remaining gate |
+| --- | --- | --- | --- |
+| Bảo's R23/R24 tooling and later NOTICE/CHANGELOG changes | [Bảo direct S6-13 declaration](https://github.com/tricore-opentrix/opentrix/issues/138#issuecomment-6706817105) | Yến for Bảo-only portions | Upstream notices, actual rights, AI-output provenance still PENDING |
+| Yến's `b488c78f` initial LICENSE/NOTICE and four associated CHANGELOG commits | [Yến direct declaration](https://github.com/tricore-opentrix/opentrix/issues/138#issuecomment-6706970135) | Bảo for Yến-only portions only if independently eligible; otherwise Ánh or other non-contributor | [Bảo 4-of-5 technical check](https://github.com/tricore-opentrix/opentrix/issues/138#issuecomment-6707011232); scope is not rights clearance |
+| Shared/ambiguous `44283466` CHANGELOG prose | [Ánh 5-commit technical review](https://github.com/tricore-opentrix/opentrix/issues/138#issuecomment-6707061030) | Ánh only if she did not substantively contribute to that exact prose; otherwise another non-contributing reviewer | Separate release-note prose from underlying code authorship/review, then independently decide actual rights |
+| Upstream Apache-2.0 LICENSE, manifest and SBOM outputs, notices | R24 two-run technical evidence and R27-LIC-001 | Non-contributor independent of the actual source/notice decision | Check upstream provenance/NOTICE; generated file is not automatically original/licensable |
+
+Both [Yến's initial cross-check](https://github.com/tricore-opentrix/opentrix/issues/138#issuecomment-6706932105) and [Ánh's routing mismatch finding](https://github.com/tricore-opentrix/opentrix/issues/138#issuecomment-6706956212) require this correction. The ten source-only archive members and their immutable hashes, 357 register rows, and all `RIGHTS_PENDING` positions remain unchanged. Separate independent exact-HEAD documentation review and CI are required; this does not authorize R27 rights acceptance or R24 release.
